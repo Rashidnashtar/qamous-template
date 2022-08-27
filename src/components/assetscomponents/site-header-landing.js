@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeaderCartList from "./header-cart-list";
 const SiteNavigation = () => {
   return (
@@ -158,7 +159,7 @@ const SiteNavigation = () => {
                               <a href="pricing.html">pricing</a>
                             </li>
                             <li>
-                              <a href="dashboard.html">dashboard</a>
+                              <Link to="/dashboard">dashboard</Link>
                             </li>
                             <li>
                               <a href="coming-soon.html">Coming Soon</a>

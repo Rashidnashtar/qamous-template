@@ -1,4 +1,4 @@
-import SectionHeader from "./sectionHeader";
+import SectionHeader from "../assetscomponents/sectionHeader";
 const FeaturedLocations = () => (
   <div className="featured-locations-area featured-location-style-one ptb-100">
     <div className="container">

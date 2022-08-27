@@ -1,12 +1,12 @@
-import SiteNavigation from "../components/site-header-landing";
-import FrontBanner from "../components/frontpage-banner";
-import FeaturedLocations from "../components/featured-locations";
-import PromoVideo from "../components/promovideo";
-import PopularTodos from "../components/populartodos";
-import Process from "../components/process";
-import Testimonaial from "../components/testimonaial";
-import SiteFooter from "../components/sitefooter";
-import HeaderSearchModel from "../components/headersearchmodel";
+import SiteNavigation from "../components/assetscomponents/site-header-landing";
+import FrontBanner from "../components/frontpagecomponents/frontpage-banner";
+import FeaturedLocations from "../components/frontpagecomponents/featured-locations";
+import PromoVideo from "../components/frontpagecomponents/promovideo";
+import PopularTodos from "../components/frontpagecomponents/populartodos";
+import Process from "../components/frontpagecomponents/process";
+import Testimonaial from "../components/frontpagecomponents/testimonaial";
+import SiteFooter from "../components/assetscomponents/sitefooter";
+import HeaderSearchModel from "../components/frontpagecomponents/headersearchmodel";
 const FrontPage = () => {
   return (
     <>
@@ -21,11 +21,6 @@ const FrontPage = () => {
         <SiteFooter />
         <HeaderSearchModel />
       </div>
-
-      {/*~./ end site footer ~*/}
-      {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  Start Header Search Model
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
     </>
   );
 };

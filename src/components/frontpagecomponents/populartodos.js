@@ -1,4 +1,4 @@
-import SectionHeader from "./sectionHeader";
+import SectionHeader from "../assetscomponents/sectionHeader";
 const PopularTodos = () => (
   <section className="popular-todos-section popular-todos-style-one ptb-100">
     <div className="container">
