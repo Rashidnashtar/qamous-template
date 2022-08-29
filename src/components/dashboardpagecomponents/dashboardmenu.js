@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DashboardMenu = () => {
   return (
@@ -46,10 +47,10 @@ const DashboardMenu = () => {
                 </a>
               </li>
               <li>
-                <a href="index-2.html">
+                <Link to="/">
                   <span className="icon icon-home4" />
                   <span>Home</span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#">

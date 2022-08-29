@@ -22,10 +22,10 @@ const SiteNavigation = () => {
                           <a href="#">Home</a>
                           <ul className="dropdown-content">
                             <li>
-                              <a href="index-2.html">Home one</a>
+                              <Link to="/">Home one</Link>
                             </li>
                             <li>
-                              <a href="index02.html">Home two </a>
+                              <Link to="/second">Home two </Link>
                             </li>
                             <li>
                               <a href="index03.html">Home Three </a>

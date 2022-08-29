@@ -7,6 +7,7 @@ import Process from "../components/frontpagecomponents/process";
 import Testimonaial from "../components/frontpagecomponents/testimonaial";
 import SiteFooter from "../components/assetscomponents/sitefooter";
 import HeaderSearchModel from "../components/frontpagecomponents/headersearchmodel";
+
 const FrontPage = () => {
   return (
     <>
