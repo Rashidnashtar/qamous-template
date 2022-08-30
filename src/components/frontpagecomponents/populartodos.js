@@ -2,7 +2,11 @@ import SectionHeader from "../assetscomponents/sectionHeader";
 const PopularTodos = () => (
   <section className="popular-todos-section popular-todos-style-one ptb-100">
     <div className="container">
-      <SectionHeader />
+      <SectionHeader
+        header="Best Thing to Do in The "
+        boldHeader="City"
+        paragrah="What are you interested"
+      />
       <div className="row">
         {/*~~~~~ Start Popular Todo Item ~~~~~*/}
         <div className="col-lg-4">

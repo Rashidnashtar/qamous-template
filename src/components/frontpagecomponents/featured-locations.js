@@ -2,7 +2,11 @@ import SectionHeader from "../assetscomponents/sectionHeader";
 const FeaturedLocations = () => (
   <div className="featured-locations-area featured-location-style-one ptb-100">
     <div className="container">
-      <SectionHeader />
+      <SectionHeader
+        header="Top Featured"
+        boldHeader="Locations"
+        paragrah="What do you want to do today"
+      />
       <div className="row">
         <div className="col-12">
           <div className="featured-locations-content">

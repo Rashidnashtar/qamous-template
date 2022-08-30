@@ -7,6 +7,7 @@ import SecondPromoVid from "../components/secondfrontpageconponents/secondpromov
 import FeaturedLocations from "./../components/frontpagecomponents/featured-locations";
 import Testimonaial from "./../components/frontpagecomponents/testimonaial";
 import SiteFooter from "./../components/assetscomponents/sitefooter";
+import Process from "../components/frontpagecomponents/process";
 const SecondFrontPage = () => {
   return (
     <>
@@ -15,16 +16,12 @@ const SecondFrontPage = () => {
         <SecondFrontBannar />
         <PopularCategories />
         <SecondPopularTodos />
+        <Process />
         <SecondPromoVid />
         <FeaturedLocations />
         <Testimonaial />
         <SiteFooter />
       </div>
-
-      {/*~./ end site footer ~*/}
-      {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  Start Header Search Model
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
     </>
   );
 };

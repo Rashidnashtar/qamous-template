@@ -9,7 +9,11 @@ const Process = () => {
       }}
     >
       <div className="container">
-        <SectionHeader />
+        <SectionHeader
+          header="How Does It"
+          boldHeader="Work"
+          paragrah="Easy steps in few moments"
+        />
         <div className="row">
           <div className="col-12">
             <div className="process-main-content">

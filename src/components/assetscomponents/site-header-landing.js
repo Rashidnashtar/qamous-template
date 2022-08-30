@@ -28,7 +28,7 @@ const SiteNavigation = () => {
                               <Link to="/second">Home two </Link>
                             </li>
                             <li>
-                              <a href="index03.html">Home Three </a>
+                              <Link to="/third">Home Three </Link>
                             </li>
                             <li>
                               <a href="index04.html">Home four </a>
