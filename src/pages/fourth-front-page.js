@@ -6,7 +6,7 @@ import FourthPopularTodos from "../components/fourthfrontpagecomponents/fourthpo
 import FourthFeaturedLocations from "../components/fourthfrontpagecomponents/fourthfeaturedlocations";
 import ClientReview from "../components/fourthfrontpagecomponents/clientreview";
 import Pricing from "../components/fourthfrontpagecomponents/pricing";
-import SiteFooter from "./../components/assetscomponents/sitefooter";
+import FourthFooter from "../components/fourthfrontpagecomponents/fourthfooter";
 
 const FourthFrontPage = () => {
   return (
@@ -20,7 +20,7 @@ const FourthFrontPage = () => {
         <ClientReview />
         <Pricing />
       </div>
-      <SiteFooter />
+      <FourthFooter />
     </>
   );
 };
