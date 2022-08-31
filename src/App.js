@@ -7,6 +7,7 @@ import FifthFrontPage from "./pages/fifth-front-page";
 import SixthFrontPage from "./pages/sixth-front-page";
 import ListingGrid from "./pages/listing-grid";
 import { Routes, Route } from "react-router-dom";
+import ListingMap from "./pages/listing-map";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         {/* Home Pages end*/}
         {/* Listing Pages start */}
         <Route path="/listing-grid" element={<ListingGrid />} />
+        <Route path="/listing-map" element={<ListingMap />} />
         {/* Listing Pages end */}
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>

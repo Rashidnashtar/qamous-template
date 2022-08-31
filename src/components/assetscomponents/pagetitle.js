@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PageTitle = () => {
+const PageTitle = ({ title, path, isLink }) => {
   return (
     <div
       className="page-title-area text-white bg-image bg-overlay"
@@ -52,18 +53,23 @@ const PageTitle = () => {
               {/*./ hero-search-form */}
               <div className="breadcrumb-content-area">
                 <div className="page-header-caption">
-                  <h1>Food &amp; Drinks</h1>
+                  <h1>{title}</h1>
                 </div>
-                <div className="breadcrumb-area">
-                  <ol className="breadcrumb">
-                    <li className="breadcrumb-item">
-                      <a href="index-2.html">Home</a>
-                    </li>
-                    <li aria-current="page" className="breadcrumb-item active">
-                      listing
-                    </li>
-                  </ol>
-                </div>
+                {!isLink && (
+                  <div className="breadcrumb-area">
+                    <ol className="breadcrumb">
+                      <li className="breadcrumb-item">
+                        <Link to="/">Home</Link>
+                      </li>
+                      <li
+                        aria-current="page"
+                        className="breadcrumb-item active"
+                      >
+                        {path}
+                      </li>
+                    </ol>
+                  </div>
+                )}
               </div>
             </div>
             {/*~~./ page-header-content ~~*/}

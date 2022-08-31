@@ -115,15 +115,13 @@ const SiteNavigation = () => {
                               <a href="listing-list.html">Listing List</a>
                             </li>
                             <li>
-                              <a href="listing-map-one.html">Listing map one</a>
+                              <Link to="/listing-map">Listing map one</Link>
                             </li>
                             <li>
-                              <a href="listing-map-two.html">Listing map two</a>
+                              <Link to="/listing-map">Listing map two</Link>
                             </li>
                             <li>
-                              <a href="listing-map-three.html">
-                                Listing map three
-                              </a>
+                              <Link to="/listing-map">Listing map three</Link>
                             </li>
                             <li>
                               <a href="listing-details.html">
