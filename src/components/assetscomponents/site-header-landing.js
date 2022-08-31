@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import HeaderCartList from "./header-cart-list";
-const SiteNavigation = () => {
+const SiteNavigation = ({ isDark }) => {
   return (
     <>
       {/**********************************************************/}
@@ -10,7 +10,7 @@ const SiteNavigation = () => {
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Site Navigation
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
-        <div className="site-navigation">
+        <div className="site-navigation ">
           <div className="container-fluid">
             <div className="row">
               <div className="col-12">
@@ -124,9 +124,9 @@ const SiteNavigation = () => {
                               <Link to="/listing-map">Listing map three</Link>
                             </li>
                             <li>
-                              <a href="listing-details.html">
+                              <Link to="/listing-details">
                                 Listing details one
-                              </a>
+                              </Link>
                             </li>
                             <li>
                               <a href="listing-details-two.html">
