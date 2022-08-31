@@ -109,7 +109,7 @@ const SiteNavigation = () => {
                           <a href="#">Listing</a>
                           <ul className="dropdown-content">
                             <li>
-                              <a href="listing-grid.html">Listing Grid</a>
+                              <Link to="listing-grid">Listing Grid</Link>
                             </li>
                             <li>
                               <a href="listing-list.html">Listing List</a>
