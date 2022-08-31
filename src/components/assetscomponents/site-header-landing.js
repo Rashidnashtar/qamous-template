@@ -28,16 +28,16 @@ const SiteNavigation = () => {
                               <Link to="/second">Home two </Link>
                             </li>
                             <li>
-                              <a href="index03.html">Home Three </a>
+                              <Link to="/third">Home Three </Link>
                             </li>
                             <li>
-                              <a href="index04.html">Home four </a>
+                              <Link to="/fourth">Home four </Link>
                             </li>
                             <li>
-                              <a href="index05.html">Home five </a>
+                              <Link to="/fifth">Home five </Link>
                             </li>
                             <li>
-                              <a href="index06.html">Home Six </a>
+                              <Link to="/sixth">Home Six </Link>
                             </li>
                           </ul>
                         </li>

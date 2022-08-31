@@ -4,7 +4,11 @@ const PopularCategories = () => {
   return (
     <section className="popular-categories-section popular-categories-style-one ptb-100">
       <div className="container">
-        <SectionHeader />
+        <SectionHeader
+          header="What Are You"
+          boldHeader="Interested In"
+          paragrah="Poular Categories"
+        />
         <div className="row categories-list">
           {/*~~~~ Start Single Cat ~~~~*/}
           <div className="col-lg-3 col-md-6">
