@@ -37,7 +37,7 @@ const SiteNavigation = () => {
                               <Link to="/fifth">Home five </Link>
                             </li>
                             <li>
-                              <a href="index06.html">Home Six </a>
+                              <Link to="/sixth">Home Six </Link>
                             </li>
                           </ul>
                         </li>
