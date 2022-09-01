@@ -5,9 +5,9 @@ import PopularCategories from "../components/secondfrontpageconponents/popularca
 import SecondPopularTodos from "../components/secondfrontpageconponents/secondfrontpopulartodos";
 import SecondPromoVid from "../components/secondfrontpageconponents/secondpromovid";
 import FeaturedLocations from "./../components/frontpagecomponents/featured-locations";
-import Testimonaial from "./../components/frontpagecomponents/testimonaial";
 import SiteFooter from "./../components/assetscomponents/sitefooter";
-import Process from "../components/frontpagecomponents/process";
+import Process from "../components/assetscomponents/process";
+import Testimonaial from "../components/assetscomponents/testimonaial";
 const SecondFrontPage = () => {
   return (
     <>

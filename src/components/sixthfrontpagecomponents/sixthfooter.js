@@ -1,6 +1,6 @@
 import React from "react";
 
-const SixthFooter = () => {
+const SixthFooter = ({ isNotBranded }) => {
   return (
     <>
       {" "}
@@ -11,30 +11,32 @@ const SixthFooter = () => {
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Popular brands Section
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
-        <div className="popular-brands-section pt-70">
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                {/*~~ Start Brands Carousel ~~*/}
-                <div className="brands-carousel owl-carousel">
-                  <div className="brands-link">
-                    <img src="assets/images/brand/3/1.png" alt="logo" />
+        {!isNotBranded && (
+          <div className="popular-brands-section pt-70">
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  {/*~~ Start Brands Carousel ~~*/}
+                  <div className="brands-carousel owl-carousel">
+                    <div className="brands-link">
+                      <img src="assets/images/brand/3/1.png" alt="logo" />
+                    </div>
+                    <div className="brands-link">
+                      <img src="assets/images/brand/3/2.png" alt="logo" />
+                    </div>
+                    <div className="brands-link">
+                      <img src="assets/images/brand/3/3.png" alt="logo" />
+                    </div>
+                    <div className="brands-link">
+                      <img src="assets/images/brand/3/4.png" alt="logo" />
+                    </div>
                   </div>
-                  <div className="brands-link">
-                    <img src="assets/images/brand/3/2.png" alt="logo" />
-                  </div>
-                  <div className="brands-link">
-                    <img src="assets/images/brand/3/3.png" alt="logo" />
-                  </div>
-                  <div className="brands-link">
-                    <img src="assets/images/brand/3/4.png" alt="logo" />
-                  </div>
+                  {/*~./ end brands carousel ~*/}
                 </div>
-                {/*~./ end brands carousel ~*/}
               </div>
             </div>
           </div>
-        </div>
+        )}
         {/*~./ end popular brands section ~*/}
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Footer Widget Area

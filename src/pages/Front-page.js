@@ -3,8 +3,8 @@ import FrontBanner from "../components/frontpagecomponents/frontpage-banner";
 import FeaturedLocations from "../components/frontpagecomponents/featured-locations";
 import PromoVideo from "../components/frontpagecomponents/promovideo";
 import PopularTodos from "../components/frontpagecomponents/populartodos";
-import Process from "../components/frontpagecomponents/process";
-import Testimonaial from "../components/frontpagecomponents/testimonaial";
+import Process from "../components/assetscomponents/process";
+import Testimonaial from "../components/assetscomponents/testimonaial";
 import SiteFooter from "../components/assetscomponents/sitefooter";
 import HeaderSearchModel from "../components/frontpagecomponents/headersearchmodel";
 

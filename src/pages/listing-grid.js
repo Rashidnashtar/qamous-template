@@ -7,10 +7,14 @@ const ListingGrid = () => {
   return (
     <>
       <SiteNavigation />
-      <PageTitle title="Food & Drinks" path="listing" />
+      <PageTitle
+        title="Food & Drinks"
+        path="listing"
+        backUrl="assets/images/header/2.jpg"
+      />
       <div className="site-content">
         <MainWrapper />
-        <SixthFooter />
+        <SixthFooter isNotBranded />
       </div>
     </>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PageTitle = ({ title, path, isLink }) => {
+const PageTitle = ({ title, path, isLink, backUrl }) => {
   return (
     <div
       className="page-title-area text-white bg-image bg-overlay"
-      style={{ backgroundImage: "url(assets/images/header/2.jpg)" }}
+      style={{ backgroundImage: `url(${backUrl})` }}
     >
       <div className="container">
         <div className="row">

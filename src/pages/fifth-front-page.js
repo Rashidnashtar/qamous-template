@@ -2,7 +2,7 @@ import React from "react";
 import SiteNavigation from "../components/assetscomponents/site-header-landing";
 import FifthBanner from "../components/fifthfrontpagecomponents/fifthbanner";
 import FifthPopularTodos from "../components/fifthfrontpagecomponents/fifthpopulartodos";
-import Process from "../components/frontpagecomponents/process";
+import Process from "../components/assetscomponents/process";
 import FeaturedLocations from "../components/frontpagecomponents/featured-locations";
 import PromoVideo from "../components/frontpagecomponents/promovideo";
 import ClientReview from "../components/fourthfrontpagecomponents/clientreview";
