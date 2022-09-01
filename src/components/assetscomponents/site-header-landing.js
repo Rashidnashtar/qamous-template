@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import HeaderCartList from "./header-cart-list";
-const SiteNavigation = () => {
+const SiteNavigation = ({ isDark }) => {
   return (
     <>
       {/**********************************************************/}
@@ -10,7 +10,7 @@ const SiteNavigation = () => {
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Site Navigation
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
-        <div className="site-navigation">
+        <div className="site-navigation ">
           <div className="container-fluid">
             <div className="row">
               <div className="col-12">
@@ -109,41 +109,39 @@ const SiteNavigation = () => {
                           <a href="#">Listing</a>
                           <ul className="dropdown-content">
                             <li>
-                              <a href="listing-grid.html">Listing Grid</a>
+                              <Link to="listing-grid">Listing Grid</Link>
                             </li>
                             <li>
                               <a href="listing-list.html">Listing List</a>
                             </li>
                             <li>
-                              <a href="listing-map-one.html">Listing map one</a>
+                              <Link to="/listing-map">Listing map one</Link>
                             </li>
                             <li>
-                              <a href="listing-map-two.html">Listing map two</a>
+                              <Link to="/listing-map">Listing map two</Link>
                             </li>
                             <li>
-                              <a href="listing-map-three.html">
-                                Listing map three
-                              </a>
+                              <Link to="/listing-map">Listing map three</Link>
                             </li>
                             <li>
-                              <a href="listing-details.html">
+                              <Link to="/listing-details">
                                 Listing details one
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="listing-details-two.html">
+                              <Link to="/listing-details-two">
                                 Listing details two
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="listing-details-three.html">
+                              <Link to="/listing-details-three">
                                 Listing details three
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="listing-details-four.html">
+                              <Link to="/listing-details-four">
                                 Listing details four
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </li>
