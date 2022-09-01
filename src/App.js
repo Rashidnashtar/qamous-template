@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import ListingMap from "./pages/listing-map";
 import ListingDetails from "./pages/listing-details";
 import ListingDetailsSecond from "./pages/listing-details-second";
+import ListingDetailsThird from "./pages/listing-details-third";
 
 const App = () => {
   return (
@@ -28,6 +29,10 @@ const App = () => {
         <Route path="/listing-map" element={<ListingMap />} />
         <Route path="/listing-details" element={<ListingDetails />} />
         <Route path="/listing-details-two" element={<ListingDetailsSecond />} />
+        <Route
+          path="/listing-details-three"
+          element={<ListingDetailsThird />}
+        />
         {/* Listing Pages end */}
         {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
