@@ -11,6 +11,7 @@ import ListingMap from "./pages/listing-map";
 import ListingDetails from "./pages/listing-details";
 import ListingDetailsSecond from "./pages/listing-details-second";
 import ListingDetailsThird from "./pages/listing-details-third";
+import ListingDetailsFourth from "./pages/listing-details-fourth";
 
 const App = () => {
   return (
@@ -32,6 +33,10 @@ const App = () => {
         <Route
           path="/listing-details-three"
           element={<ListingDetailsThird />}
+        />
+        <Route
+          path="/listing-details-four"
+          element={<ListingDetailsFourth />}
         />
         {/* Listing Pages end */}
         {/* Pages start */}

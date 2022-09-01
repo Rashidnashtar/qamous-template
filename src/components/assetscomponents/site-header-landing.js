@@ -139,9 +139,9 @@ const SiteNavigation = ({ isDark }) => {
                               </Link>
                             </li>
                             <li>
-                              <a href="listing-details-four.html">
+                              <Link to="/listing-details-four">
                                 Listing details four
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </li>
