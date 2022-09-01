@@ -9,6 +9,7 @@ import ListingGrid from "./pages/listing-grid";
 import { Routes, Route } from "react-router-dom";
 import ListingMap from "./pages/listing-map";
 import ListingDetails from "./pages/listing-details";
+import ListingDetailsSecond from "./pages/listing-details-second";
 
 const App = () => {
   return (
@@ -25,10 +26,12 @@ const App = () => {
         {/* Listing Pages start */}
         <Route path="/listing-grid" element={<ListingGrid />} />
         <Route path="/listing-map" element={<ListingMap />} />
+        <Route path="/listing-details" element={<ListingDetails />} />
+        <Route path="/listing-details-two" element={<ListingDetailsSecond />} />
         {/* Listing Pages end */}
+        {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
-
-        <Route path="listing-details" element={<ListingDetails />} />
+        {/* Pages end */}
       </Routes>
     </>
   );
