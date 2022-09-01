@@ -9,10 +9,10 @@ const ListingMap = () => {
       <SiteNavigation />
 
       <div className="site-content">
-        <PageTitle isLink />
+        <PageTitle isLink backUrl="assets/images/header/2.jpg" />
         <MainListingMap />
       </div>
-      <SixthFooter />
+      <SixthFooter isNotBranded />
       {/*~./ end site content ~*/}
     </>
   );

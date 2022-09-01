@@ -12,7 +12,6 @@ import ListingDetails from "./pages/listing-details";
 import ListingDetailsSecond from "./pages/listing-details-second";
 import ListingDetailsThird from "./pages/listing-details-third";
 import ListingDetailsFourth from "./pages/listing-details-fourth";
-
 const App = () => {
   return (
     <>
@@ -41,6 +40,7 @@ const App = () => {
         {/* Listing Pages end */}
         {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
+
         {/* Pages end */}
       </Routes>
     </>

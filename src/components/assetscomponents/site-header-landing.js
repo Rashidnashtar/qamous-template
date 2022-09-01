@@ -151,7 +151,7 @@ const SiteNavigation = ({ isDark }) => {
                           </a>
                           <ul className="dropdown-content">
                             <li>
-                              <a href="about.html">About us</a>
+                              <Link to="/about">About us</Link>
                             </li>
                             <li>
                               <a href="pricing.html">pricing</a>

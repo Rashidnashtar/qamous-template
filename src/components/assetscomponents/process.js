@@ -1,4 +1,4 @@
-import SectionHeader from "../assetscomponents/sectionHeader";
+import SectionHeader from "./sectionHeader";
 const Process = () => {
   return (
     <section
