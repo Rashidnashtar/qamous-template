@@ -172,14 +172,14 @@ const SiteNavigation = ({ isDark }) => {
                               <Link to="/blog-list">Blog List</Link>
                             </li>
                             <li>
-                              <a href="blog-left-sidebar.html">
+                              <Link to="/blog-left-sidebar">
                                 Blog left sidebar
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="blog-right-sidebar.html">
+                              <Link to="/blog-right-sidebar">
                                 Blog right sidebar
-                              </a>
+                              </Link>
                             </li>
                             <li>
                               <a href="post-details.html">Post details</a>
