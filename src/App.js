@@ -19,6 +19,8 @@ import HowItWork from "./pages/howitwork";
 import Blog from "./pages/blog";
 import BlogList from "./pages/bloggird";
 import BlogDirecteSlider from "./pages/blogdirectedslider";
+import PostDetails from "./pages/postdetails";
+import ProductDetails from "./pages/productdetails";
 const App = () => {
   return (
     <>
@@ -58,6 +60,8 @@ const App = () => {
           element={<BlogDirecteSlider isLeft />}
         />
         <Route path="/blog-right-sidebar" element={<BlogDirecteSlider />} />
+        <Route path="/post-details" element={<PostDetails />} />
+        <Route path="/single-shop" element={<ProductDetails />} />
         {/* Pages end */}
       </Routes>
     </>

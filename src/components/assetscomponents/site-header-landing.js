@@ -182,10 +182,10 @@ const SiteNavigation = ({ isDark }) => {
                               </Link>
                             </li>
                             <li>
-                              <a href="post-details.html">Post details</a>
+                              <Link to="/post-details">Post details</Link>
                             </li>
                             <li>
-                              <a href="single-shop.html">single product</a>
+                              <Link to="/single-shop">single product</Link>
                             </li>
                             <li>
                               <a href="404.html">404</a>
