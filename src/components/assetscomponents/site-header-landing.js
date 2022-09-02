@@ -166,10 +166,10 @@ const SiteNavigation = ({ isDark }) => {
                               <Link to="/process">How it work</Link>
                             </li>
                             <li>
-                              <a href="blog.html">Blog Grid</a>
+                              <Link to="/blog">Blog Grid</Link>
                             </li>
                             <li>
-                              <a href="blog-list.html">Blog List</a>
+                              <Link to="/blog-list">Blog List</Link>
                             </li>
                             <li>
                               <a href="blog-left-sidebar.html">

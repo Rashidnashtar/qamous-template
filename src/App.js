@@ -16,6 +16,8 @@ import Pricing from "./pages/pricing";
 import About from "./pages/about";
 import ComingSoon from "./pages/comingsoon";
 import HowItWork from "./pages/howitwork";
+import Blog from "./pages/blog";
+import BlogList from "./pages/bloggird";
 const App = () => {
   return (
     <>
@@ -48,6 +50,8 @@ const App = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/process" element={<HowItWork />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-list" element={<BlogList />} />
         {/* Pages end */}
       </Routes>
     </>
