@@ -13,6 +13,9 @@ import ListingDetailsSecond from "./pages/listing-details-second";
 import ListingDetailsThird from "./pages/listing-details-third";
 import ListingDetailsFourth from "./pages/listing-details-fourth";
 import Pricing from "./pages/pricing";
+import About from "./pages/about";
+import ComingSoon from "./pages/comingsoon";
+import HowItWork from "./pages/howitwork";
 const App = () => {
   return (
     <>
@@ -41,7 +44,10 @@ const App = () => {
         {/* Listing Pages end */}
         {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/process" element={<HowItWork />} />
         {/* Pages end */}
       </Routes>
     </>

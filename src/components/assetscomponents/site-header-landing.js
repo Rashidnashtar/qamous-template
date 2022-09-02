@@ -160,10 +160,10 @@ const SiteNavigation = ({ isDark }) => {
                               <Link to="/dashboard">dashboard</Link>
                             </li>
                             <li>
-                              <a href="coming-soon.html">Coming Soon</a>
+                              <Link to="/coming-soon">Coming Soon</Link>
                             </li>
                             <li>
-                              <a href="howitwork.html">How it work</a>
+                              <Link to="/process">How it work</Link>
                             </li>
                             <li>
                               <a href="blog.html">Blog Grid</a>
