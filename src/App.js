@@ -23,6 +23,8 @@ import PostDetails from "./pages/postdetails";
 import ProductDetails from "./pages/productdetails";
 import ErrorPage from "./pages/404";
 import Shop from "./pages/shop";
+import Contact from "./pages/contact";
+import Cart from "./pages/cart";
 const App = () => {
   return (
     <>
@@ -68,7 +70,11 @@ const App = () => {
         {/* Pages end */}
         {/* main pages start */}
         <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
         {/* main pages End*/}
+        {/* shop pages start*/}
+        <Route path="/cart" element={<Cart />} />
+        {/* shop pages end*/}
       </Routes>
     </>
   );
