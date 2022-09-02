@@ -12,6 +12,7 @@ import ListingDetails from "./pages/listing-details";
 import ListingDetailsSecond from "./pages/listing-details-second";
 import ListingDetailsThird from "./pages/listing-details-third";
 import ListingDetailsFourth from "./pages/listing-details-fourth";
+import Pricing from "./pages/pricing";
 const App = () => {
   return (
     <>
@@ -40,7 +41,7 @@ const App = () => {
         {/* Listing Pages end */}
         {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
-
+        <Route path="/pricing" element={<Pricing />} />
         {/* Pages end */}
       </Routes>
     </>
