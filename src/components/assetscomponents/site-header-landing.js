@@ -6,7 +6,9 @@ const SiteNavigation = ({ isDark }) => {
       {/**********************************************************/}
       {/********************** SITE HEADER ***********************/}
       {/**********************************************************/}
-      <header className="site-header header-style-two">
+      <header
+        className={`site-header header-style-two ${isDark ? "text-dark" : ""}`}
+      >
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Site Navigation
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
@@ -188,12 +190,12 @@ const SiteNavigation = ({ isDark }) => {
                               <Link to="/single-shop">single product</Link>
                             </li>
                             <li>
-                              <a href="404.html">404</a>
+                              <Link to="/404">404</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="shop.html">Shop</a>
+                          <Link to="/shop">Shop</Link>
                         </li>
                         <li>
                           <a href="contact.html">Contact</a>

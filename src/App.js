@@ -21,6 +21,8 @@ import BlogList from "./pages/bloggird";
 import BlogDirecteSlider from "./pages/blogdirectedslider";
 import PostDetails from "./pages/postdetails";
 import ProductDetails from "./pages/productdetails";
+import ErrorPage from "./pages/404";
+import Shop from "./pages/shop";
 const App = () => {
   return (
     <>
@@ -62,7 +64,11 @@ const App = () => {
         <Route path="/blog-right-sidebar" element={<BlogDirecteSlider />} />
         <Route path="/post-details" element={<PostDetails />} />
         <Route path="/single-shop" element={<ProductDetails />} />
+        <Route path="/404" element={<ErrorPage />} />
         {/* Pages end */}
+        {/* main pages start */}
+        <Route path="/shop" element={<Shop />} />
+        {/* main pages End*/}
       </Routes>
     </>
   );
