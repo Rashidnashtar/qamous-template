@@ -25,7 +25,12 @@ import ErrorPage from "./pages/404";
 import Shop from "./pages/shop";
 import Contact from "./pages/contact";
 import Cart from "./pages/cart";
+
+import { useSelector } from "react-redux/es/exports";
+import { selectUserState } from "./redux/user/user-selectors";
 const App = () => {
+  const userState = useSelector(selectUserState);
+  console.log(userState);
   return (
     <>
       <Routes>
