@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeaderCartList = () => {
   return (
     <div className="header-card-area">
@@ -56,12 +58,12 @@ const HeaderCartList = () => {
           </h4>
         </div>
         <div className="cart-btn-group">
-          <a href="cart.html" className="btn btn-default btn-default2">
+          <Link to="/cart" className="btn btn-default btn-default2">
             view card
-          </a>
-          <a href="checkout.html" className="btn btn-default">
+          </Link>
+          <Link to="/checkout" className="btn btn-default">
             Checkout
-          </a>
+          </Link>
         </div>
       </div>
     </div>

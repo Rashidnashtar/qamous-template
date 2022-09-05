@@ -12,6 +12,19 @@ import ListingDetails from "./pages/listing-details";
 import ListingDetailsSecond from "./pages/listing-details-second";
 import ListingDetailsThird from "./pages/listing-details-third";
 import ListingDetailsFourth from "./pages/listing-details-fourth";
+import Pricing from "./pages/pricing";
+import About from "./pages/about";
+import ComingSoon from "./pages/comingsoon";
+import HowItWork from "./pages/howitwork";
+import Blog from "./pages/blog";
+import BlogList from "./pages/bloggird";
+import BlogDirecteSlider from "./pages/blogdirectedslider";
+import PostDetails from "./pages/postdetails";
+import ProductDetails from "./pages/productdetails";
+import ErrorPage from "./pages/404";
+import Shop from "./pages/shop";
+import Contact from "./pages/contact";
+import Cart from "./pages/cart";
 const App = () => {
   return (
     <>
@@ -40,8 +53,28 @@ const App = () => {
         {/* Listing Pages end */}
         {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
-
+        <Route path="/about" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/process" element={<HowItWork />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-list" element={<BlogList />} />
+        <Route
+          path="/blog-left-sidebar"
+          element={<BlogDirecteSlider isLeft />}
+        />
+        <Route path="/blog-right-sidebar" element={<BlogDirecteSlider />} />
+        <Route path="/post-details" element={<PostDetails />} />
+        <Route path="/single-shop" element={<ProductDetails />} />
+        <Route path="/404" element={<ErrorPage />} />
         {/* Pages end */}
+        {/* main pages start */}
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* main pages End*/}
+        {/* shop pages start*/}
+        <Route path="/cart" element={<Cart />} />
+        {/* shop pages end*/}
       </Routes>
     </>
   );

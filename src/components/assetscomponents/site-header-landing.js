@@ -6,7 +6,9 @@ const SiteNavigation = ({ isDark }) => {
       {/**********************************************************/}
       {/********************** SITE HEADER ***********************/}
       {/**********************************************************/}
-      <header className="site-header header-style-two">
+      <header
+        className={`site-header header-style-two ${isDark ? "text-dark" : ""}`}
+      >
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Site Navigation
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/}
@@ -154,49 +156,49 @@ const SiteNavigation = ({ isDark }) => {
                               <Link to="/about">About us</Link>
                             </li>
                             <li>
-                              <a href="pricing.html">pricing</a>
+                              <Link to="/pricing">pricing</Link>
                             </li>
                             <li>
                               <Link to="/dashboard">dashboard</Link>
                             </li>
                             <li>
-                              <a href="coming-soon.html">Coming Soon</a>
+                              <Link to="/coming-soon">Coming Soon</Link>
                             </li>
                             <li>
-                              <a href="howitwork.html">How it work</a>
+                              <Link to="/process">How it work</Link>
                             </li>
                             <li>
-                              <a href="blog.html">Blog Grid</a>
+                              <Link to="/blog">Blog Grid</Link>
                             </li>
                             <li>
-                              <a href="blog-list.html">Blog List</a>
+                              <Link to="/blog-list">Blog List</Link>
                             </li>
                             <li>
-                              <a href="blog-left-sidebar.html">
+                              <Link to="/blog-left-sidebar">
                                 Blog left sidebar
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="blog-right-sidebar.html">
+                              <Link to="/blog-right-sidebar">
                                 Blog right sidebar
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="post-details.html">Post details</a>
+                              <Link to="/post-details">Post details</Link>
                             </li>
                             <li>
-                              <a href="single-shop.html">single product</a>
+                              <Link to="/single-shop">single product</Link>
                             </li>
                             <li>
-                              <a href="404.html">404</a>
+                              <Link to="/404">404</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="shop.html">Shop</a>
+                          <Link to="/shop">Shop</Link>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          <Link to="/contact">Contact</Link>
                         </li>
                       </ul>
                     </nav>
