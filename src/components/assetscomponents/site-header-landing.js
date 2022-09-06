@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
 import HeaderCartList from "./header-cart-list";
+import { selectUserState } from "../../redux/user/user-selectors";
+import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
 const SiteNavigation = ({ isDark }) => {
+  const userState = useSelector(selectUserState);
+  const loaction = useLocation();
+  const isGuest = userState === "guest";
+  console.log(loaction);
   return (
     <>
       {/**********************************************************/}
       {/********************** SITE HEADER ***********************/}
       {/**********************************************************/}
       <header
-        className={`site-header header-style-two ${isDark ? "text-dark" : ""}`}
+        className={` site-header header-style-two ${isDark ? "text-dark" : ""}`}
       >
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Site Navigation
@@ -240,11 +247,18 @@ const SiteNavigation = ({ isDark }) => {
                         <span className="text">Register</span>
                       </a>
                     </div>
-                    <div className="add-listing-area">
-                      <a className="btn btn-default" href="add-listing.html">
-                        + add listing
-                      </a>
-                    </div>
+                    {userState === "guest" ? (
+                      <div className="add-listing-area">
+                        <Link
+                          className={`btn btn-default`}
+                          to={`${
+                            isGuest ? `${loaction.pathname}` : "/add-listing"
+                          }`}
+                        >
+                          + add listing
+                        </Link>
+                      </div>
+                    ) : null}
                   </div>
                   {/*~./ header-navigation-right ~*/}
                 </div>

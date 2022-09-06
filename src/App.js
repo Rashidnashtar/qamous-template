@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import FrontPage from "./pages/Front-page";
 import Dashboard from "./pages/dashboard";
 import SecondFrontPage from "./pages/second-front-page";
@@ -6,7 +7,6 @@ import FourthFrontPage from "./pages/fourth-front-page";
 import FifthFrontPage from "./pages/fifth-front-page";
 import SixthFrontPage from "./pages/sixth-front-page";
 import ListingGrid from "./pages/listing-grid";
-import { Routes, Route } from "react-router-dom";
 import ListingMap from "./pages/listing-map";
 import ListingDetails from "./pages/listing-details";
 import ListingDetailsSecond from "./pages/listing-details-second";
@@ -25,7 +25,13 @@ import ErrorPage from "./pages/404";
 import Shop from "./pages/shop";
 import Contact from "./pages/contact";
 import Cart from "./pages/cart";
+import AddListing from "./pages/add-listing";
+import { useSelector } from "react-redux/es/exports";
+import { selectUserState } from "./redux/user/user-selectors";
 const App = () => {
+  const userState = useSelector(selectUserState);
+  console.log(userState);
+
   return (
     <>
       <Routes>
@@ -50,6 +56,7 @@ const App = () => {
           path="/listing-details-four"
           element={<ListingDetailsFourth />}
         />
+        <Route path="/add-listing" element={<AddListing />} />
         {/* Listing Pages end */}
         {/* Pages start */}
         <Route path="/dashboard" element={<Dashboard />} />
