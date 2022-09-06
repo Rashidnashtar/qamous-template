@@ -241,9 +241,9 @@ const SiteNavigation = ({ isDark }) => {
                       </a>
                     </div>
                     <div className="add-listing-area">
-                      <a className="btn btn-default" href="add-listing.html">
+                      <Link className="btn btn-default" to="/add-listing">
                         + add listing
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/*~./ header-navigation-right ~*/}
