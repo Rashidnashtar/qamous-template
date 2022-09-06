@@ -14,7 +14,7 @@ const SiteNavigation = ({ isDark }) => {
       {/********************** SITE HEADER ***********************/}
       {/**********************************************************/}
       <header
-        className={`site-header header-style-two ${isDark ? "text-dark" : ""}`}
+        className={` site-header header-style-two ${isDark ? "text-dark" : ""}`}
       >
         {/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       Start Site Navigation
