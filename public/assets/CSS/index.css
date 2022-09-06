@@ -6376,7 +6376,10 @@ ul.dropdown-content
   border-color: #f12c15;
   color: #f12c15;
 }
-
+.disabled-btn {
+  background-color: gray !important;
+  color: black;
+}
 #sticky-header
   .site-header.header-style-two
   .add-listing-area
