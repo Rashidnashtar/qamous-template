@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const SignIn = () => {
+  const handleRemember = (event) => {
+    setSignInCred({ ...signInCred, remember: !signInCred.remember });
+  };
   const handleChange = (event) => {
-    if ((event.target.name = "remember"))
-      setSignInCred({ ...signInCred, remember: !signInCred.remember });
-    else
-      setSignInCred({ ...signInCred, [event.target.name]: event.target.value });
+    console.log(event.target);
+    setSignInCred({ ...signInCred, [event.target.name]: event.target.value });
   };
   const [signInCred, setSignInCred] = useState({
     email: "",
@@ -70,7 +71,7 @@ const SignIn = () => {
                             name="remember"
                             id="remembermesignin"
                             type="checkbox"
-                            onChange={handleChange}
+                            onChange={handleRemember}
                             checked={signInCred.remember}
                           />
                           <span>Remember Me</span>

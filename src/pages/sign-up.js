@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const SignUp = () => {
   const navigate = useNavigate();
+  const [signUpCred, setSignUpCred] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confrimPassword: "",
+    agree: "",
+  });
+  const handleAgree = (event) => {
+    setSignUpCred({ ...signUpCred, agree: !signUpCred.agree });
+  };
+  const handleChange = (event) => {
+    setSignUpCred({ ...signUpCred, [event.target.name]: event.target.value });
+  };
+
   return (
     <div
       className="user-reg-form-area modal fade show"
@@ -35,6 +49,8 @@ const SignUp = () => {
                       name="name"
                       className="form-controllar"
                       type="text"
+                      value={signUpCred.name}
+                      onChange={handleChange}
                       placeholder="Username"
                     />
                   </div>
@@ -44,6 +60,8 @@ const SignUp = () => {
                       name="email"
                       className="form-controllar"
                       type="email"
+                      value={signUpCred.email}
+                      onChange={handleChange}
                       placeholder="Email Adderss"
                     />
                   </div>
@@ -53,24 +71,29 @@ const SignUp = () => {
                       name="password"
                       className="form-controllar"
                       type="password"
+                      value={signUpCred.password}
+                      onChange={handleChange}
                       placeholder="Password"
                     />
                   </div>
                   <div className="form-group">
                     <input
                       id="pass-up-confirm"
-                      name="password"
+                      name="confrimPassword"
                       className="form-controllar"
                       type="password"
+                      value={signUpCred.confrimPassword}
+                      onChange={handleChange}
                       placeholder="Confirm Password"
                     />
                   </div>
                   <div className="login-form-remember">
                     <label>
                       <input
-                        id="remembermesignup"
+                        name="agree"
+                        onChange={handleAgree}
                         type="checkbox"
-                        defaultValue=""
+                        checked={signUpCred.agree}
                       />
                       <span>I Agree to the</span>
                       <a href="#">Privacy Polciy</a>
