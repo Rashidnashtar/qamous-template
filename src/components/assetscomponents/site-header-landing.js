@@ -7,7 +7,7 @@ const SiteNavigation = ({ isDark }) => {
   const userState = useSelector(selectUserState);
   const loaction = useLocation();
   const isGuest = userState === "guest";
-  console.log(loaction);
+
   return (
     <>
       {/**********************************************************/}
@@ -237,15 +237,10 @@ const SiteNavigation = ({ isDark }) => {
                     </div>
                     {/*~./ search-wrap ~*/}
                     <div className="user-registration-area dropdown">
-                      <a
-                        className="user-reg-btn"
-                        href="#"
-                        data-toggle="modal"
-                        data-target="#reg_form_model"
-                      >
+                      <Link className="user-reg-btn" to="/sign-in">
                         <span className="icon icon-user-1" />
                         <span className="text">Register</span>
-                      </a>
+                      </Link>
                     </div>
                     {userState === "guest" ? (
                       <div className="add-listing-area">
@@ -279,11 +274,7 @@ const SiteNavigation = ({ isDark }) => {
         {/*~~./ end mobile menu ~~*/}
       </header>
       {/*~~~ Sticky Header ~~~*/}
-      <div id="sticky-header" />
-      {/*~./End site header ~*/}
-      {/**********************************************************/}
-      {/********************** SITE CONTENT **********************/}
-      {/**********************************************************/}
+      <div id="sticky-header"></div>
     </>
   );
 };

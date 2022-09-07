@@ -26,8 +26,11 @@ import Shop from "./pages/shop";
 import Contact from "./pages/contact";
 import Cart from "./pages/cart";
 import AddListing from "./pages/add-listing";
+import SignIn from "./pages/sign-in";
 import { useSelector } from "react-redux/es/exports";
 import { selectUserState } from "./redux/user/user-selectors";
+import Checkout from "./pages/checkout";
+import SignUp from "./pages/sign-up";
 const App = () => {
   const userState = useSelector(selectUserState);
   console.log(userState);
@@ -81,7 +84,12 @@ const App = () => {
         {/* main pages End*/}
         {/* shop pages start*/}
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
         {/* shop pages end*/}
+        {/*register pages start */}
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        {/*register pages end */}
       </Routes>
     </>
   );
