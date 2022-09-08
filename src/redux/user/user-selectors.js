@@ -6,3 +6,7 @@ export const selectUserState = createSelector(
   [selectUser],
   (user) => user.userState
 );
+export const selectCurrentUser = createSelector(
+  [selectUser],
+  (user) => user.currentUser
+);

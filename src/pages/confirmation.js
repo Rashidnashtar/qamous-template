@@ -1,6 +1,8 @@
 import React from "react";
-import "./confirm.css";
+import { useSelector } from "react-redux";
+import { selectCurrentUser } from "../redux/user/user-selectors";
 const Confirmation = () => {
+  const currentUser = useSelector(selectCurrentUser);
   return (
     <div className="con-container">
       <div className="confirm">
@@ -11,8 +13,8 @@ const Confirmation = () => {
         />
         <h3 className="confrim-head"> Confirm Email Address</h3>
         <p className="confirm-p">
-          We emailed a confrimation link to (email) check your email to confirm
-          your account
+          We emailed a confrimation link to {currentUser.email} check your email
+          to confirm your account
         </p>
         <p className="re-p">Didn't get a confirmation email?</p>
         <button

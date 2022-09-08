@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setCurrentUser, setUserState } from "../redux/user/user-actions";
 const SignUp = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [signUpCred, setSignUpCred] = useState({
     name: "",
@@ -15,7 +18,15 @@ const SignUp = () => {
   const handleChange = (event) => {
     setSignUpCred({ ...signUpCred, [event.target.name]: event.target.value });
   };
-
+  const handleSubmit = (event) => {
+    console.log(event);
+    event.preventDefault();
+    const { password, confrimPassword } = signUpCred;
+    if (password !== confrimPassword) alert("not matched password ");
+    dispatch(setUserState("client"));
+    dispatch(setCurrentUser(signUpCred));
+    navigate("/confirmation");
+  };
   return (
     <div
       className="user-reg-form-area modal fade show"
@@ -39,12 +50,12 @@ const SignUp = () => {
               <div className="form-content">
                 <h3>Create an Account</h3>
                 <form
-                  id="signup-form"
+                  onSubmit={handleSubmit}
                   className="default-form signup-form"
-                  method="post"
                 >
                   <div className="form-group">
                     <input
+                      required
                       id="name"
                       name="name"
                       className="form-controllar"
@@ -56,6 +67,7 @@ const SignUp = () => {
                   </div>
                   <div className="form-group">
                     <input
+                      required
                       id="email-up"
                       name="email"
                       className="form-controllar"
@@ -67,6 +79,7 @@ const SignUp = () => {
                   </div>
                   <div className="form-group">
                     <input
+                      required
                       id="pass-up"
                       name="password"
                       className="form-controllar"
@@ -78,6 +91,7 @@ const SignUp = () => {
                   </div>
                   <div className="form-group">
                     <input
+                      required
                       id="pass-up-confirm"
                       name="confrimPassword"
                       className="form-controllar"
@@ -90,6 +104,7 @@ const SignUp = () => {
                   <div className="login-form-remember">
                     <label>
                       <input
+                        required
                         name="agree"
                         onChange={handleAgree}
                         type="checkbox"
