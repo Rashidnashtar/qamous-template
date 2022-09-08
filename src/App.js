@@ -31,6 +31,7 @@ import { useSelector } from "react-redux/es/exports";
 import { selectUserState } from "./redux/user/user-selectors";
 import Checkout from "./pages/checkout";
 import SignUp from "./pages/sign-up";
+import Confirmation from "./pages/confirmation";
 const App = () => {
   const userState = useSelector(selectUserState);
   console.log(userState);
@@ -89,6 +90,7 @@ const App = () => {
         {/*register pages start */}
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/confirmation" element={<Confirmation />} />
         {/*register pages end */}
       </Routes>
     </>
