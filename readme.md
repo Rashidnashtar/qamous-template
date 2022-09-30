@@ -12,7 +12,7 @@
 
 ## go to the repo folder
 
-    cd qamous-backend
+    cd qamous-frontend
 
 ## Install all the dependencies using composer
 
